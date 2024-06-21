@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="../../links.js"></script>
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Budget Planner</title>
+  </head>
+  <body>
+    <div id="app" class="app-container">
+      <h1 class="app-title">Budget planner</h1>
+      <div class="header-container">
+        <div>
+          <label for="category">Select Category</label>
+          <select id="category">
+            <option value="income">Income</option>
+            <option value="home_utilities">Home & Utilities</option>
+            <option value="insurance_financial">Insurance & Financial</option>
+            <option value="groceries">Groceries</option>
+            <option value="personal_medical">Personal & Medical</option>
+            <option value="entertainment_eat_out">
+              Entertainment & Eat-out
+            </option>
+            <option value="transport_auto">Transport & Auto</option>
+            <option value="children">Children</option>
+          </select>
+        </div>
+        <section class="actions">
+          <button class="btn" id="loadButton">
+            <i class="fa-solid fa-rotate-right"></i></button
+          ><button class="btn" id="saveButton">
+            <i class="fa-solid fa-floppy-disk"></i>
+          </button>
+        </section>
+      </div>
+
+      <section class="inputs-container">
+        <div class="input-values">
+          <input type="text" id="name" placeholder="Income / Expanse" />
+          <input type="number" id="amount" placeholder="Amount" />
+        </div>
+        <button id="addButton" class="btn">ADD</button>
+      </section>
+      <div id="total">Total: $ <span id="totalAmount">0</span></div>
+      <section class="budget-list-container">
+        <section class="budget-list-header">
+          <h2>Budget list <i class="fa-solid fa-file-lines"></i></h2>
+          <button class="btn clear" id="clearButton">
+            Clear <i class="fa-solid fa-database"></i>
+          </button>
+        </section>
+        <ul class="budget-list-data" id="budgetList">
+          <h3>Incomes: $<span id="totalIncome"></span></h3>
+          <ul id="income">
+            <!-- <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li> -->
+          </ul>
+          <h3>Home & Utilities: $<span id="totalHome_utilities"></span></h3>
+          <ul id="home_utilities">
+            <!-- <li>
+              <div>${item.name} - $${item.amount}</div>
+              <div>
+                <i
+                  class="fa-solid fa-pen-to-square btn edit"
+                  onclick="editItem(${index})"
+                ></i>
+                <i
+                  class="fa-solid fa-trash btn delete"
+                  onclick="removeItem(${index})"
+                ></i>
+              </div>
+            </li> -->
+            <!-- <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li> -->
+          </ul>
+          <h3>
+            Insurance & Financial: $<span id="totalInsurance_financial"></span>
+          </h3>
+          <ul id="insurance_financial"></ul>
+          <h3>Groceries: $<span id="totalGroceries"></span></h3>
+          <ul id="groceries"></ul>
+          <h3>Personal & Medical: $<span id="totalPersonal_medical"></span></h3>
+          <ul id="personal_medical"></ul>
+          <h3>
+            Entertainment & Eat-out: $<span
+              id="totalEntertainment_eat_out"
+            ></span>
+          </h3>
+          <ul id="entertainment_eat_out"></ul>
+          <h3>Transport & Auto: $<span id="totalTransport_auto"></span></h3>
+          <ul id="transport_auto"></ul>
+          <h3>Children: $<span id="totalChildren"></span></h3>
+          <ul id="children">
+            <!-- <li>item 1</li>
+            <li>item 2</li>
+            <li>item 3</li>
+            <li>item 4</li> -->
+          </ul>
+        </ul>
+      </section>
+    </div>
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

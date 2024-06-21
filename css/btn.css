@@ -1,0 +1,35 @@
+.btn {
+  font-family: inherit;
+  background-color: var(--secondary-color);
+  color: #fff;
+  border: none;
+  outline: none;
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  transition: all 0.2s ease-in-out;
+  box-shadow: 1px 4px 3px var(--secondary-color);
+  &:active {
+    transform: scale(0.95);
+    box-shadow: none;
+  }
+  &:hover {
+    background-color: var(--light-color);
+    color: var(--secondary-color);
+    box-shadow: 1px 1px 1px var(--secondary-color);
+  }
+  &.clear:hover {
+    background-color: var(--danger-color);
+    color: var(--light-color);
+  }
+  &.edit:hover {
+    background-color: var(--warning-color);
+    color: var(--primary-color);
+  }
+  &.delete:hover {
+    color: var(--danger-color);
+  }
+}

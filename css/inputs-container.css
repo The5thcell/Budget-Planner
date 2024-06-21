@@ -1,0 +1,28 @@
+.inputs-container {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  width: 100%;
+  & input {
+    width: 100%;
+    padding: 0.5rem;
+    border-radius: 5px;
+    border: none;
+    font-size: 1rem;
+    &:first-child {
+      margin-bottom: 0.5rem;
+    }
+    &::-webkit-outer-spin-button,
+    &::-webkit-inner-spin-button {
+      -webkit-appearance: none;
+    }
+    & {
+      -moz-appearance: textfield;
+    }
+  }
+  .btn {
+    height: 100%;
+  }
+}
